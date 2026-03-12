@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-scroll: scroll 20s linear infinite;
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+}
+
+body {
+  font-family: var(--font-inter);
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
