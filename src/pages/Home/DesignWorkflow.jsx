@@ -1,12 +1,12 @@
 import React from "react";
 import SectionHeader from "../../compnents/sectionHeader";
 import Arrow from "../../assets/Images/ArrowVector.svg";
-import Image1 from "../../assets/Images/Rectangle1.png"
-import Image2 from "../../assets/Images/Rectangle2.png"
-import Image3 from "../../assets/Images/Rectangle3.png"
-import Image4 from "../../assets/Images/Rectangle4.png"
-import Image5 from "../../assets/Images/Rectangle5.png"
-import Image6 from "../../assets/Images/Rectangle6.png"
+import Image1 from "../../assets/Images/Rectangle1.png";
+import Image2 from "../../assets/Images/Rectangle2.png";
+import Image3 from "../../assets/Images/Rectangle3.png";
+import Image4 from "../../assets/Images/Rectangle4.png";
+import Image5 from "../../assets/Images/Rectangle5.png";
+import Image6 from "../../assets/Images/Rectangle6.png";
 
 const DesignWorkflow = () => {
   const projects = [

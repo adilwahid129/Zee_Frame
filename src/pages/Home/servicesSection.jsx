@@ -19,9 +19,7 @@ const ServicesSection = () => {
         <SectionHeader
           p1={"WE are great at"}
           h1={"Our Services"}
-          p2={
-            "Designs with Exceptional User Experiences"
-          }
+          p2={"Designs with Exceptional User Experiences"}
         />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[32px] w-full max-w-[1240px]">

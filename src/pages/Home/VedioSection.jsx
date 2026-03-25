@@ -33,10 +33,11 @@ const VedioSection = () => {
          check karenge ke click button ke aas paas hua hai ya nahi.
       */
       const distance = Math.sqrt(
-        Math.pow(clickX - position.x, 2) + Math.pow(clickY - position.y, 2)
+        Math.pow(clickX - position.x, 2) + Math.pow(clickY - position.y, 2),
       );
 
-      if (distance < 80) { // 80px radius ke andar click hua to navigate karega
+      if (distance < 80) {
+        // 80px radius ke andar click hua to navigate karega
         navigate("/work");
       }
     }
@@ -72,8 +73,7 @@ const VedioSection = () => {
         >
           <Button
             text={"All Work"}
-            bgcolor={"bg-white"}
-            color={"text-black"}
+            variant={"secondary"}
             arrow={<img src={Arrow} alt="Arrow" width={20} height={20} />}
           />
         </div>

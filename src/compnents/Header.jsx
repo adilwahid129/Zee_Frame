@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Logo from "../assets/Images/Logo.png";
 import Button from "./Button";
 import Arrow from "../assets/Images/ArrowVector.svg";
@@ -13,6 +13,7 @@ const Header = () => {
     { name: "Work", path: "/work" },
     { name: "Insights", path: "/insights" },
   ];
+  const navigate = useNavigate();
 
   return (
     <header className="container sticky top-0 z-100 bg-black">
@@ -43,9 +44,10 @@ const Header = () => {
         </ul>
 
         <Button
-          text={"Lets Talk"}
-          bgcolor={"bg-[#F3FE00]"}
-          color={"text-black"}
+          text={"Work with Us"}
+          hoverText={"Let's Talk!"}
+          onClick={() => navigate("/contact")}
+          variant="primary"
           arrow={<img src={Arrow} alt="Arrow" width={20} height={20} />}
           gapClass="gap-6"
         />

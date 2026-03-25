@@ -1,4 +1,8 @@
+// import { SiFigma } from "react-icons/si";
 import React from "react";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import backgroundBubble from "../../assets/Images/backgroundBubble.svg";
 import vector from "../../assets/Images/Vector.svg";
 import Shield from "../../assets/Images/Shield.svg";
@@ -9,7 +13,6 @@ import vectorImg from "../../assets/Images/VectorImg.png";
 import sketch from "../../assets/Images/sketch-2.png";
 import dualArrow from "../../assets/Images/duoArrow.png";
 import StarVector from "../../assets/Images/StarVector.png";
-import { useState, useEffect } from "react";
 import Button from "../../compnents/Button";
 import LogoSliderComponent from "../../compnents/LogoSliderComponent";
 import VedioSection from "../../pages/Home/VedioSection";
@@ -17,6 +20,9 @@ import ServicesSection from "../../pages/Home/servicesSection";
 import IdeaToExecution from "../../pages/Home/IdeaToExecution";
 import DesignWorkflow from "../../pages/Home/DesignWorkflow";
 import VisionBanner from "../../pages/Home/VisionBanner";
+import AccordianSection from "./AccordianSection";
+import OurInsights from "./OurInsights";
+import ContactUs from "./ContactUs";
 const HomePage = () => {
   const variables = [
     { name: "stunning" },
@@ -25,7 +31,7 @@ const HomePage = () => {
   ];
   const [index, setIndex] = useState(0);
   const [show, setShow] = useState(true);
-
+  const navigate = useNavigate();
   useEffect(() => {
     const interval = setInterval(() => {
       setShow(false);
@@ -37,6 +43,12 @@ const HomePage = () => {
 
     return () => clearInterval(interval);
   }, [variables.length]);
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    // Jab bhi path change ho (e.g., / sa /contact ya wapis /), screen top par jaye
+    window.scrollTo(0, 0);
+  }, [pathname]);
   return (
     <div className="container !pt-[30px] !pb=[80px]">
       <div className=" relative">
@@ -133,24 +145,60 @@ const HomePage = () => {
           </div>
           <div className="flex items-center gap-[20px]">
             <Button
-              text={"Schedule Call"}
-              bgcolor={"bg-white"}
-              color={"text-black"}
-              border={"border border-white"}
+              text="Schedule Call"
+              onClick={() => navigate("/contact")}
+              hoverText="Let's Talk!"
+              variant="secondary"
             />
+
             <Button
-              text={"© 2025 Work"}
-              bgcolor={"bg-black"}
-              color={"text-white"}
-              border={" border border-white"}
+              text="© 2025 Work"
+              onClick={() => navigate("/contact")}
+              variant="outline"
+              hoverText={
+                <div className="flex items-center gap-[15px]">
+                  Open
+                  <svg
+                    width="12"
+                    height="18"
+                    viewBox="0 0 38 57"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19 28.5C19 23.2533 23.2533 19 28.5 19C33.7467 19 38 23.2533 38 28.5C38 33.7467 33.7467 38 28.5 38H19V28.5Z"
+                      fill="#1ABCFE"
+                    />
+                    <path
+                      d="M0 47.5C0 42.2533 4.2467 38 9.5 38C14.7533 38 19 42.2533 19 47.5C19 52.7467 14.7533 57 9.5 57C4.2467 57 0 52.7467 0 47.5Z"
+                      fill="#0ACF83"
+                    />
+                    <path
+                      d="M19 0H28.5C33.7467 0 38 4.2467 38 9.5C38 14.7533 33.7467 19 28.5 19H19V0Z"
+                      fill="#FF7262"
+                    />
+                    <path
+                      d="M0 9.5C0 4.2467 4.2467 0 9.5 0H19V19H9.5C4.2467 19 0 14.7533 0 9.5Z"
+                      fill="#F24E1E"
+                    />
+                    <path
+                      d="M0 28.5C0 23.2533 4.2467 19 9.5 19H19V38H9.5C4.2467 38 0 33.7467 0 28.5Z"
+                      fill="#A259FF"
+                    />
+                  </svg>
+                </div>
+              }
             />
           </div>
           <LogoSliderComponent />
           <VedioSection />
           <ServicesSection />
           <IdeaToExecution />
-          <DesignWorkflow/>
+          <DesignWorkflow />
           <VisionBanner />
+          <AccordianSection />
+          <OurInsights />
+          <ContactUs />
         </div>
       </div>
     </div>
