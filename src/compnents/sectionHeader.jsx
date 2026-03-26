@@ -2,7 +2,7 @@ import React from 'react';
 
 const SectionHeader = ({p1, h1, p2}) => {
     return (
-        <div>
+        <div className='container'> 
             {/* Header */}
         <div className="flex flex-col items-center gap-4  text-center">
           <p className="text-[#F3FE00] text-sm font-medium uppercase tracking-[0.2em] font-[Inter]">

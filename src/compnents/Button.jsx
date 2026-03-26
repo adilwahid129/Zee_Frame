@@ -1,13 +1,14 @@
-const Button = ({ 
-  text, 
+const Button = ({
+  text,
   hoverText,
-  variant = "primary", 
-  arrow, 
-  gapClass = "gap-2", 
+  variant = "primary",
+  arrow,
+  gapClass = "gap-2",
   onClick,
-  className = "" 
+  className = "",
 }) => {
-  const baseClasses = "group relative cursor-pointer w-max h-12 px-6 flex items-center justify-center border border-transparent rounded-full transition-all hover:bg-transparent hover:text-[#F3FE00] hover:border-[#F3FE00]";
+  const baseClasses =
+    "group relative cursor-pointer w-max h-12 px-6 flex items-center justify-center border border-transparent rounded-full transition-all hover:bg-transparent hover:text-[#F3FE00] hover:border-[#F3FE00]";
 
   const variants = {
     primary: "text-black bg-[#F3FE00] ",
@@ -17,7 +18,7 @@ const Button = ({
 
   return (
     <button
-    onClick={onClick}
+      onClick={onClick}
       className={`
         ${baseClasses}
         ${variants[variant]} 
@@ -26,9 +27,10 @@ const Button = ({
     >
       {/* Main Grid Container jo width hold karega */}
       <span className="grid items-center">
-        
         {/* State 1: Original Text + Arrow (Normal View) */}
-        <span className={`col-start-1 row-start-1 flex items-center ${gapClass} transition-all duration-300 group-hover:opacity-0 group-hover:invisible`}>
+        <span
+          className={`col-start-1 row-start-1 flex items-center ${gapClass} transition-all duration-300 group-hover:opacity-0 group-hover:invisible`}
+        >
           <span className="font-[inter] text-[16px] font-semibold leading-[24px] whitespace-nowrap">
             {text}
           </span>
@@ -43,12 +45,11 @@ const Button = ({
 
         {/* Hidden Placeholder: Taake button ki width dono states mein se jo bari hai uske mutabiq fix rahe */}
         <span className="invisible pointer-events-none col-start-1 row-start-1 flex items-center">
-           <span className={`${arrow ? gapClass : ""} flex items-center`}>
-              {text.length > (hoverText?.length || 0) ? text : hoverText}
-              {arrow && <span className="flex items-center">{arrow}</span>}
-           </span>
+          <span className={`${arrow ? gapClass : ""} flex items-center`}>
+            {text.length > (hoverText?.length || 0) ? text : hoverText}
+            {arrow && <span className="flex items-center">{arrow}</span>}
+          </span>
         </span>
-
       </span>
     </button>
   );
