@@ -31,7 +31,7 @@ const About = () => {
   return (
     <>
       <section className="container">
-        <div className="w-full flex self-stretch items-start gap-[80px] px-[100px] py-[80px]">
+        <div className="w-full flex self-stretch items-start gap-[80px] px-[100px] py-[80px] bg-[#090909]">
           <div className="h-[391.259px] w-[390px]">
             <img src={writting} alt="Writting" width={390} height={391.259} />
           </div>

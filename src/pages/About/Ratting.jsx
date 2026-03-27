@@ -41,8 +41,8 @@ const Ratting = () => {
   ];
 
   return (
-    <section className="w-full">
-      <div className="flex flex-col items-center bg-[#0D0D0D] px-[20px] gap-[72px] md:px-[100px] py-[80px]">
+    <section className="container relative z-10">
+      <div className="flex flex-col items-center w-full bg-[#0D0D0D] px-[20px] gap-[72px] md:px-[100px] py-[80px]">
         <div className="flex flex-wrap justify-center items-center gap-[60px] md:gap-[72px]">
           {ratingData.map((item) => (
             <div key={item.id} className="flex flex-col gap-4">

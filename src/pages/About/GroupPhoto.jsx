@@ -7,14 +7,12 @@ import SectionHeader from "../../compnents/sectionHeader";
 const GroupPhoto = () => {
   return (
     <>
-      <section className="container relative w-full">
-        <div className="sticky top-[0] w-full h-[677px] z-0 overflow-hidden">
+      <section className=" container sticky top-0 z-[-1]">
           <img
             src={bgPhoto}
             alt="GroupPhoto"
-            className="w-full h-full object-cover pt-[64px]"
+            className="w-full h-full object-cover pt-[64px] "
           />
-        </div>
       </section>
     </>
   );
