@@ -1,11 +1,10 @@
-import React from "react"; // Added imports
+import React from "react";
 import StarVector from "../../assets/Images/StarVector.png";
 import Button from "../../compnents/Button";
 import vector from "../../assets/Images/Vector.svg";
 import ContactUs from "../Home/ContactUs";
-import FilteredProjects from "./FilteredProjects";
 
-const WorkPage = () => {
+const Index = () => {
   const handleCalendlyClick = () => {
     window.open(
       "https://calendly.com/contact-zeeframes/30min?month=2026-03",
@@ -13,7 +12,6 @@ const WorkPage = () => {
       "noopener,noreferrer",
     );
   };
-
   return (
     <>
       <section className="container">
@@ -69,10 +67,9 @@ const WorkPage = () => {
           </div>
         </div>
       </section>
-      <FilteredProjects />
       <ContactUs />
     </>
   );
 };
 
-export default WorkPage;
+export default Index;

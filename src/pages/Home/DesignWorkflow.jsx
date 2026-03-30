@@ -12,37 +12,37 @@ const DesignWorkflow = () => {
   const projects = [
     {
       id: 1,
-      client: "Bloom Money",
+      name: "Bloom Money",
       title: "Empowering communities with financial solutions.",
       image: Image1,
     },
     {
       id: 2,
-      client: "Rijon",
+      name: "Rijon",
       title: "The Platform for Content Creators",
       image: Image2,
     },
     {
       id: 3,
-      client: "Earpoint",
+      name: "Earpoint",
       title: "The Best Place To Find Productivity Tools",
       image: Image3,
     },
     {
       id: 4,
-      client: "Fimecta",
+      name: "Fimecta",
       title: "Wallet application to streamline digital transactions",
       image: Image4,
     },
     {
       id: 5,
-      client: "Tidio",
+      name: "Tidio",
       title: "Clearbit, a business intelligence platform",
       image: Image5,
     },
     {
       id: 6,
-      client: "Fastgo",
+      name: "Fastgo",
       title: "Fastgo's scooter rental app to drive adoption",
       image: Image6,
     },
@@ -82,9 +82,9 @@ const DesignWorkflow = () => {
 
                 {/* Project Info - Fixed 600px constraint */}
                 <div className="flex flex-col w-full max-w-[600px]">
-                  {/* Client Name */}
+                  {/* name Name */}
                   <p className="text-[#FFF] font-inter-tight text-[14px] leading-normal opacity-60">
-                    {project.client}
+                    {project.name}
                   </p>
 
                   {/* Title & Arrow Wrapper - Perfect Alignment */}

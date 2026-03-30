@@ -50,7 +50,7 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="container" id="contact">
+    <section className="container" id="contact">
       <div className="flex items-start justify-center py-[80px] px-[100px] gap-[64px] self-stretch">
         <div className="flex flex-col items-start gap-[40px]">
           <div className="flex w-[636px] flex-col items-start gap-[32px]">
@@ -165,7 +165,7 @@ const ContactUs = () => {
             className={`flex w-[492px] items-center justify-center gap-[10px] rounded-full border-[1.5px] px-[22px] py-[14px] text-center font-['Inter'] text-[16px] font-semibold leading-[21px] transition-all duration-300
               ${isSubmitting 
                 ? "border-[#242323] text-[#FFF] bg-linear-to-r from-[#F3FE00] to-[#33DE1D] opacity-80 cursor-not-allowed" 
-                : "border-[#F3FE00] text-[#F3FE00] bg-transparent hover:border-[#242323] hover:bg-linear-to-r hover:from-[#F3FE00] hover:to-[#33DE1D] hover:text-[#FFF]"
+                : "border-[#242323] text-[#FFF] bg-linear-to-r from-[#F3FE00] to-[#33DE1D] opacity-80 cursor-pointer"
               }`}
           >
             {isSubmitting ? "Submitting..." : "Submit Inquiry"}
@@ -203,7 +203,7 @@ const ContactUs = () => {
           </div>
         </form>
       </div>
-    </div>
+    </section>
   );
 };
 
