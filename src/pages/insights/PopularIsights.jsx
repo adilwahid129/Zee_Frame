@@ -30,7 +30,7 @@ const PopularInsights = () => {
   }, [selectedCategory, searchQuery]);
 
   return (
-    <section className="w-full bg-black min-h-screen">
+    <section className="w-full bg-black ">
       <div className="container relative overflow-hidden mx-auto">
         <div className="absolute left-[-99px] top-[-78px] z-0 pointer-events-none">
           <img
