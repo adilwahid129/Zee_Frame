@@ -50,8 +50,8 @@ const HomePage = () => {
     window.scrollTo(0, 0);
   }, [pathname]);
   return (
-    <div className="container !pt-[30px] !pb=[80px]">
-      <div className=" relative">
+    <div className="container !pt-[30px] !pb=[80px] overflow-hidden">
+      <div className=" relative ">
         <img
           src={backgroundBubble}
           alt="Background Bubble"

@@ -15,7 +15,7 @@ const Index = () => {
   return (
     <>
       <section className="container">
-        <div className="flex relative w-full flex-col items-center gap-[64px] bg-[#030303] px-[100px] py-[80px]">
+        <div className="flex relative  w-full flex-col items-center gap-[64px] bg-[#030303] px-[100px] py-[80px]">
           <span className="absolute top-[223px] left-[225px]">
             <img src={StarVector} alt="StarVector" />
           </span>

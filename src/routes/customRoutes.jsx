@@ -7,6 +7,7 @@ import ServicesPage from "../pages/services";
 import WorkPage from "../pages/work";
 import InsightsPage from "../pages/insights";
 import ContactUs from "../pages/contact";
+import BlogDetail from "../pages/insights/BlogDetail";
 
 const CustomRoutes = () => {
   return (
@@ -19,6 +20,7 @@ const CustomRoutes = () => {
           <Route path="/work" element={<WorkPage />} />
           <Route path="/insights" element={<InsightsPage />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path="/blog/:id" element={<BlogDetail />} />
         </Route>
       </Routes>
     </BrowserRouter>
