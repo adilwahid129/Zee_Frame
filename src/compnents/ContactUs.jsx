@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import user1 from "../../assets/Images/MuhammadAli.png";
-import user2 from "../../assets/Images/MuhammadBabar.png";
-import linkedIn from "../../assets/Images/linkedIn_logo.png";
-import tickIcon from "../../assets/Images/tick.png";
-import image1 from "../../assets/Images/TechBehemoths.png";
-import image2 from "../../assets/Images/trustpilot.png";
-import image3 from "../../assets/Images/ui-ux.png";
-import image4 from "../../assets/Images/award4.svg";
-import whattsapp from "../../assets/Images/whatsapp.png";
-import message from "../../assets/Images/message.png";
+import user1 from "../assets/Images/MuhammadAli.png";
+import user2 from "../assets/Images/MuhammadBabar.png";
+import linkedIn from "../assets/Images/linkedIn_logo.png";
+import tickIcon from "../assets/Images/tick.png";
+import image1 from "../assets/Images/TechBehemoths.png";
+import image2 from "../assets/Images/trustpilot.png";
+import image3 from "../assets/Images/ui-ux.png";
+import image4 from "../assets/Images/award4.svg";
+import whattsapp from "../assets/Images/whatsapp.png";
+import message from "../assets/Images/message.png";
 
 const ContactUs = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);

@@ -200,7 +200,7 @@ const BlogDetail = () => {
                 </p>
               </div>
             </div>
-            <div className="flex flex-col items-start justify-center gap-[24px]">
+            <div className="flex flex-col items-start justify-center sticky top-[92px] gap-[24px]">
               <h1 className="self-stretch font-['Poppins'] text-[18px] font-medium leading-normal text-[#ECECEC]">
                 Trending Blogs
               </h1>

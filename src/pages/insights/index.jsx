@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import StarVector from "../../assets/Images/StarVector.png";
 import Button from "../../compnents/Button";
 import vector from "../../assets/Images/Vector.svg";
-import ContactUs from "../Home/ContactUs";
+import ContactUs from "../../compnents/ContactUs";
 import CardSection from "./CardSection";
 import LatestInsights from "./LatestInsights";
 import PopularInsights from "./PopularIsights";

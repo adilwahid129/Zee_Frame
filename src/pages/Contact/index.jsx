@@ -2,7 +2,7 @@ import React from "react";
 import StarVector from "../../assets/Images/StarVector.png";
 import Button from "../../compnents/Button";
 import vector from "../../assets/Images/Vector.svg";
-import ContactUs from "../Home/ContactUs";
+import ContactUs from "../../compnents/ContactUs";
 
 const Index = () => {
   const handleCalendlyClick = () => {

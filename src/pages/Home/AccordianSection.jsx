@@ -134,7 +134,7 @@ const navigate = useNavigate();
                         : "bg-[#222] text-[#666] border-transparent "
                     }`}
                   >
-                    <span className="text-lg font-bold leading-none select-none">
+                    <span className="text-lg text-center font-bold leading-none select-none">
                       {isOpen ? "−" : "+"}
                     </span>
                   </div>

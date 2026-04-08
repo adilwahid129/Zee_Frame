@@ -1,8 +1,8 @@
 import React from "react"; // Added imports
 import StarVector from "../../assets/Images/StarVector.png";
-import Button from "../../compnents/Button";
 import vector from "../../assets/Images/Vector.svg";
-import ContactUs from "../Home/ContactUs";
+import Button from "../../compnents/Button";
+import ContactUs from "../../compnents/ContactUs";
 import FilteredProjects from "./FilteredProjects";
 
 const WorkPage = () => {
@@ -17,7 +17,7 @@ const WorkPage = () => {
   return (
     <>
       <section className="container">
-        <div className="flex relative overflow-hidden w-full flex-col items-center gap-[64px] bg-[#030303] px-[100px] py-[80px]">
+        <div className="flex relative overflow-hidden w-full min-h-[580px] flex-col items-center gap-[64px] bg-[#030303] px-[100px] py-[80px]">
           <span className="absolute top-[223px] left-[225px]">
             <img src={StarVector} alt="StarVector" />
           </span>

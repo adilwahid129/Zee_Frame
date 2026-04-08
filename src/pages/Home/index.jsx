@@ -22,7 +22,7 @@ import DesignWorkflow from "../../pages/Home/DesignWorkflow";
 import VisionBanner from "../../pages/Home/VisionBanner";
 import AccordianSection from "./AccordianSection";
 import OurInsights from "./OurInsights";
-import ContactUs from "./ContactUs";
+import ContactUs from "../../compnents/ContactUs";
 const HomePage = () => {
   const variables = [
     { name: "stunning" },
