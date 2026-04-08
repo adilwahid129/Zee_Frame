@@ -1,5 +1,5 @@
 import React from "react";
-import CardImage from "../../assets/Images/CardImage.png";
+import CardImage from "../../assets/Images/cardImage.png";
 import cardDot from "../../assets/Images/cardDot.png";
 
 const CardSection = () => {

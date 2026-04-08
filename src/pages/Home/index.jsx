@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import backgroundBubble from "../../assets/Images/backgroundBubble.svg";
 import vector from "../../assets/Images/Vector.svg";
-import Shield from "../../assets/Images/Shield.svg";
+import Shield from "../../assets/Images/shield.svg";
 import Adobe from "../../assets/Images/adobe_xd.png";
 import Figma from "../../assets/Images/figma-icon.png";
 import Bubble from "../../assets/Images/bubble.png";
