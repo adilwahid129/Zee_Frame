@@ -6,7 +6,7 @@ import AboutPage from "../pages/About";
 import ServicesPage from "../pages/services";
 import WorkPage from "../pages/work";
 import InsightsPage from "../pages/insights";
-import ContactUs from "../pages/contact";
+import ContactUs from "../pages/ContactUS";
 import BlogDetail from "../pages/insights/BlogDetail";
 import ProductStrategyConsulting from "../pages/services/ProductDesign/ProductStrategyConsulting";
 import UXResearchAndInsights from "../pages/services/ProductDesign/UXResearchAndInsights";
