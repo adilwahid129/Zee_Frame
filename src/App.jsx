@@ -1,15 +1,12 @@
-import { useState } from 'react'
-import Layout from './layout'
-import CustomRoutes from './routes/customRoutes'
+import Layout from "./layout";
+import CustomRoutes from "./routes/customRoutes";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-   <>
-   <CustomRoutes/>
-   </>
-  )
+    <>
+      <CustomRoutes />
+    </>
+  );
 }
 
-export default App
+export default App;

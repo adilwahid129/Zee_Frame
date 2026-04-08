@@ -8,9 +8,6 @@ import card1 from "../../assets/Images/card1.png";
 import LatestInsights from "./LatestInsights";
 const BlogDetail = () => {
   const { id } = useParams();
-  const blog = allBlogs.find((b) => b.id === id);
-
-  if (!blog) return <div className="p-20 text-white">Blog not found.</div>;
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("Design");
 
@@ -30,6 +27,10 @@ const BlogDetail = () => {
         blog.title.toLowerCase().includes(searchQuery.toLowerCase()),
     );
   }, [selectedCategory, searchQuery]);
+
+  const blog = allBlogs.find((b) => b.id === id);
+
+  if (!blog) return <div className="p-20 text-white">Blog not found.</div>;
 
   return (
     <>
