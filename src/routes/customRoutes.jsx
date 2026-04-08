@@ -41,6 +41,8 @@ const CustomRoutes = () => {
           <Route path="/insights" element={<InsightsPage />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/blog/:id" element={<BlogDetail />} />
+
+          
         </Route>
       </Routes>
     </BrowserRouter>
